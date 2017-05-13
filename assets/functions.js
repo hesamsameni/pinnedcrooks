@@ -2,7 +2,7 @@ $(window).scroll(function(){
 	var wScroll = $(this).scrollTop();
 	
 	$('.logo').css({
-		'transform' : 'translate(0px , '+ wScroll /4 +'%)'
+		'transform' : 'translate(0px , '+ wScroll /10 +'%)'
 	});
 	
 	$('.instrument1').css({
@@ -12,5 +12,17 @@ $(window).scroll(function(){
 	$('.instrument2').css({
 		'transform' : 'translate(0px , -'+ wScroll /2 +'%)'
 	});
+	
+	if(wScroll > $('h2').offset().top - ($(window).height() /3)){
+		
+		$('.bandMembers figure').each(function(i){
+			
+		setTimeout(function(){
+			$('.bandMembers figure').eq(i).addClass('is-showing');
+		}, 400 * (i+1));
+		});
+		
+		
+	}
 	
 });

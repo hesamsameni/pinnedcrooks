@@ -1,22 +1,56 @@
 
-.body {
-	font-family: "Open Sans" , sans-serif;
+body {
+	background-color:#000;
 }
 
-.container .h2 {
-	color: #ccc;
+.row{
+	margin-bottom:5em;
+
+}
+	
+figure{
+	position:relative;
+	opacity:0;
+	
+	transform: translateX(150px);
+	transition: all 0.5s ease-in-out;
+	}
+	
+figure.is-showing{
+	opacity:1;
+	transform: translateX(0px);
+	
+	
 }
 
-.p {
-	padding: 180px 0;
-	max-width : 640px;
-	margin: 0 auto;
-	text-align:center;
+h2 {
+	font-family: 'Ubuntu', sans-serif;
+	color:#888888;
 }
 
+p {
+	font-family: 'Ubuntu', sans-serif;
+	color:#FFF;
+}
+hr {
+	display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #777;
+    margin: 10em;
+    padding: 0px;
+}
+
+.container{
+	background-color:#000;
+	position:relative;
+	left:0px;
+	right:0px;
+}
 .whiteSpace {
 	height:2000px;
-	}
+	background-color:#000;
+}
 
 
 
@@ -24,13 +58,14 @@
 
 .backgroundImg {
 
-	background : url("img/parallax.png");
+	background : url("img/parallax2.png");
 	position: relative;
 	height:538px;
 	background-size: auto 538px;
 	background-position: top center;
 	background-attachment:fixed;
 	overflow:hidden;
+	
 	
 }
 
@@ -45,13 +80,13 @@
 	margin-top: -300px;
 }
 .instrument1{
-	width:200px;
-	height:400px;
+	width:400px;
+	height:300px;
 	background-image: url("img/guitar.png");
 	background-repeat:no-repeat;
 	background-position: right bottom;
 	position:absolute;
-	left:75%;
+	left:70%;
 	top:75%;
 
 	
@@ -64,9 +99,11 @@
 	background-repeat:no-repeat;
 	background-position: left bottom;
 	position:absolute;
-	right:75%;
+	right:70%;
 	top:75%;
 
 	
 }
+
+
 
