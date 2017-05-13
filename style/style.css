@@ -1,0 +1,72 @@
+
+.body {
+	font-family: "Open Sans" , sans-serif;
+}
+
+.container .h2 {
+	color: #ccc;
+}
+
+.p {
+	padding: 180px 0;
+	max-width : 640px;
+	margin: 0 auto;
+	text-align:center;
+}
+
+.whiteSpace {
+	height:2000px;
+	}
+
+
+
+/* Parallax */
+
+.backgroundImg {
+
+	background : url("/img/parallax.png");
+	position: relative;
+	height:538px;
+	background-size: auto 538px;
+	background-position: top center;
+	background-attachment:fixed;
+	overflow:hidden;
+	
+}
+
+.logo{
+	height:600px;
+	width:100%;
+	background-image: url("img/pinnedcrookslogo.png");
+	background-position:center;
+	background-repeat:no-repeat;
+	position:absolute;
+	top:50%;
+	margin-top: -300px;
+}
+.instrument1{
+	width:200px;
+	height:400px;
+	background-image: url("img/guitar.png");
+	background-repeat:no-repeat;
+	background-position: right bottom;
+	position:absolute;
+	left:75%;
+	top:75%;
+
+	
+}
+
+.instrument2{
+	width:400px;
+	height:300px;
+	background-image: url("img/drums.png");
+	background-repeat:no-repeat;
+	background-position: left bottom;
+	position:absolute;
+	right:75%;
+	top:75%;
+
+	
+}
+
