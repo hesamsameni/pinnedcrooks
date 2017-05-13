@@ -24,7 +24,7 @@
 
 .backgroundImg {
 
-	background : url("/img/parallax.png");
+	background : url("img/parallax.png");
 	position: relative;
 	height:538px;
 	background-size: auto 538px;
