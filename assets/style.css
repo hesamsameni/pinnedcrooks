@@ -16,7 +16,7 @@ figure{
 	opacity:0;
 	
 	transform: translateX(200px);
-	transition: all 1s ease;
+	transition: all 0.8s ease-in-out;
 	}
 	
 figure.is-showing{
@@ -28,6 +28,12 @@ figure.is-showing{
 }
 
 h2 {
+	font-family: 'Ubuntu', sans-serif;
+	color:#888888;
+	 margin: 0 10%;
+}
+
+h3 {
 	font-family: 'Ubuntu', sans-serif;
 	color:#888888;
 	 margin: 0 10%;
@@ -51,10 +57,10 @@ hr {
 	position:relative;
 	left:0px;
 	right:0px;
-	z-index: 1;
+	
 }
 .whiteSpace {
-	height:2000px;
+	height:400px;
 	background-color:#000;
 }
 
@@ -62,7 +68,6 @@ hr {
 	
 	margin: 5em 10%;
 	position:relative;
-	z-index: 1;
 	margin-bottom:100px;
 	
 	
@@ -122,13 +127,14 @@ hr {
 }
 
 footer {
-	background:white;
+	background:orangered;
 	color:black;
 	padding: 20px 0;
 	position:static;
 	bottom:0;
 	width:100%;
-	z-index:-3;
+	
+	
 	
 }
 
@@ -146,6 +152,75 @@ footer .awsomeFontIcons > a{
 	color:black;
 	margin: 1em;
 	text-decoration:none;
+}
+
+
+.galleryButton {
+	border: 1px solid white;
+	margin:20%;
+	font-family: 'Ubuntu', sans-serif;
+	font-size:2em;
+	border-radius:15%;
+	padding:20px 30px;
+	transform : translate(0px , 300px);
+	background:black;
+	display:block;
+	text-align:center;
+} 
+
+.contactButton {
+	border: 1px solid white;
+	margin:20%;
+	font-family: 'Ubuntu', sans-serif;
+	font-size:2em;
+	border-radius:15%;
+	padding:20px 30px;
+	transform : translate(0px , 300px);
+	background:black;
+	text-align:center;
+	
+} 
+.videoButton  {
+	border: 1px solid white;
+	margin:20%;
+	font-family: 'Ubuntu', sans-serif;
+	font-size:2em;
+	border-radius:15%;
+	padding:20px 30px;
+	transform : translate(0px , 300px);
+	background:black;
+	text-align:center;
+	
+}
+
+.musicButton {
+	border: 1px solid white;
+	margin:20%;
+	font-family: 'Ubuntu', sans-serif;
+	font-size:2em;
+	border-radius:15%;
+	padding:20px 30px;
+	transform : translate(0px , 300px);
+	background:black;
+	text-align:center;
+}
+
+
+.contactButton:hover , .videoButton:hover, .galleryButton:hover  , .musicButton:hover{
+	color:white;
+}
+
+.buttonRow {
+	margin-top:8em;
+	position:relative;
+	transform: translateX(0px);
+	transition: all 4s ease-in-out;
+	opacity:0;
+}
+.buttonRow.buttonsAreShowing{
+	
+	transform: translateY(-300px);
+	opacity:1;
 }
 
 

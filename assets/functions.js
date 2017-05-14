@@ -21,8 +21,21 @@ $(window).scroll(function(){
 			$('.bandMembers figure').eq(i).addClass('is-showing');
 		}, 400 * (i+1));
 		});
-		
-		
 	}
+	
+		if(wScroll > $('h2').offset().top){
+		
+		$('.buttonRow').each(function(i){
+			
+		setTimeout(function(){
+			$('.buttonRow').eq(i).addClass('buttonsAreShowing');
+		}, 400 * (i+1));
+		});
+	}
+		
+		
+	
+	
+
 	
 });
