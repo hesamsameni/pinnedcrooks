@@ -4,7 +4,10 @@ body {
 }
 
 .row{
-	margin-bottom:5em;
+	
+	
+    margin: 5em 20%;
+
 
 }
 	
@@ -12,13 +15,14 @@ figure{
 	position:relative;
 	opacity:0;
 	
-	transform: translateX(150px);
-	transition: all 0.5s ease-in-out;
+	transform: translateX(200px);
+	transition: all 1s ease;
 	}
 	
 figure.is-showing{
 	opacity:1;
 	transform: translateX(0px);
+
 	
 	
 }
@@ -26,19 +30,20 @@ figure.is-showing{
 h2 {
 	font-family: 'Ubuntu', sans-serif;
 	color:#888888;
+	 margin: 0 10%;
 }
 
 p {
 	font-family: 'Ubuntu', sans-serif;
 	color:#FFF;
+	 margin: 0 10%;
 }
 hr {
 	display: block;
     height: 1px;
-    border: 0;
     border-top: 1px solid #777;
-    margin: 10em;
-    padding: 0px;
+    margin: 4em 10%;
+  
 }
 
 .container{
@@ -46,10 +51,21 @@ hr {
 	position:relative;
 	left:0px;
 	right:0px;
+	z-index: 1;
 }
 .whiteSpace {
 	height:2000px;
 	background-color:#000;
+}
+
+.container-fluid{
+	
+	margin: 5em 10%;
+	position:relative;
+	z-index: 1;
+	margin-bottom:100px;
+	
+	
 }
 
 
@@ -103,6 +119,33 @@ hr {
 	top:75%;
 
 	
+}
+
+footer {
+	background:white;
+	color:black;
+	padding: 20px 0;
+	position:static;
+	bottom:0;
+	width:100%;
+	z-index:-3;
+	
+}
+
+footer .a{
+	color:black;
+}
+footer .footer-stuff {
+	max-width :400px;
+	margin : 0 auto;
+	font-family: 'Ubuntu', sans-serif;
+	color:black;
+}
+
+footer .awsomeFontIcons > a{
+	color:black;
+	margin: 1em;
+	text-decoration:none;
 }
 
 

@@ -13,7 +13,7 @@ $(window).scroll(function(){
 		'transform' : 'translate(0px , -'+ wScroll /2 +'%)'
 	});
 	
-	if(wScroll > $('h2').offset().top - ($(window).height() /3)){
+	if(wScroll > $('h2').offset().top){
 		
 		$('.bandMembers figure').each(function(i){
 			
