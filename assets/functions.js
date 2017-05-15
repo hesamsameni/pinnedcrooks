@@ -13,7 +13,7 @@ $(window).scroll(function(){
 		'transform' : 'translate(0px , -'+ wScroll /2 +'%)'
 	});
 	
-	if(wScroll > $('h2').offset().top){
+	if(wScroll > $('.logo').offset().top){
 		
 		$('.bandMembers figure').each(function(i){
 			
@@ -31,6 +31,8 @@ $(window).scroll(function(){
 			$('.buttonRow').eq(i).addClass('buttonsAreShowing');
 		}, 400 * (i+1));
 		});
+		
+
 	}
 		
 		

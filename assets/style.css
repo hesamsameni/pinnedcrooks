@@ -10,22 +10,28 @@ body {
 
 
 }
+
+
 	
 figure{
 	position:relative;
 	opacity:0;
-	
+	display:block;
 	transform: translateX(200px);
-	transition: all 0.8s ease-in-out;
-	}
+	transition: all 1.2s ease-in-out;
+	overflow:hidden;
+
+
+}
 	
 figure.is-showing{
 	opacity:1;
 	transform: translateX(0px);
+	
 
-	
-	
+
 }
+
 
 h2 {
 	font-family: 'Ubuntu', sans-serif;
@@ -103,7 +109,7 @@ hr {
 .instrument1{
 	width:400px;
 	height:300px;
-	background-image: url("img/guitar.png");
+	background-image: url("img/2.png");
 	background-repeat:no-repeat;
 	background-position: right bottom;
 	position:absolute;
@@ -116,7 +122,7 @@ hr {
 .instrument2{
 	width:400px;
 	height:300px;
-	background-image: url("img/drums.png");
+	background-image: url("img/3.png");
 	background-repeat:no-repeat;
 	background-position: left bottom;
 	position:absolute;
@@ -127,7 +133,7 @@ hr {
 }
 
 footer {
-	background:orangered;
+	background:#1b786d;
 	color:black;
 	padding: 20px 0;
 	position:static;
@@ -150,13 +156,14 @@ footer .footer-stuff {
 
 footer .awsomeFontIcons > a{
 	color:black;
-	margin: 1em;
+	margin: 0 auto;
 	text-decoration:none;
+	text-align:center;
 }
 
 
 .galleryButton {
-	border: 1px solid white;
+	border: 1px solid #888;
 	margin:20%;
 	font-family: 'Ubuntu', sans-serif;
 	font-size:2em;
@@ -169,7 +176,7 @@ footer .awsomeFontIcons > a{
 } 
 
 .contactButton {
-	border: 1px solid white;
+	border: 1px solid #888;
 	margin:20%;
 	font-family: 'Ubuntu', sans-serif;
 	font-size:2em;
@@ -181,7 +188,7 @@ footer .awsomeFontIcons > a{
 	
 } 
 .videoButton  {
-	border: 1px solid white;
+	border: 1px solid #888;
 	margin:20%;
 	font-family: 'Ubuntu', sans-serif;
 	font-size:2em;
@@ -194,7 +201,7 @@ footer .awsomeFontIcons > a{
 }
 
 .musicButton {
-	border: 1px solid white;
+	border: 1px solid #888;
 	margin:20%;
 	font-family: 'Ubuntu', sans-serif;
 	font-size:2em;
@@ -208,6 +215,9 @@ footer .awsomeFontIcons > a{
 
 .contactButton:hover , .videoButton:hover, .galleryButton:hover  , .musicButton:hover{
 	color:white;
+	border: 1px solid white;
+	cursor:pointer;
+	
 }
 
 .buttonRow {
@@ -222,6 +232,33 @@ footer .awsomeFontIcons > a{
 	transform: translateY(-300px);
 	opacity:1;
 }
+
+figcaption {
+	position:absolute;
+	bottom:20px;
+	left:0px;
+	background:black;
+	color:white;
+	padding: 2px 8px;
+	font-size:1em;
+	transition : all 1.5s ease-in-out;
+	opacity:0;
+
+}
+
+/* Change another Element style when hover on another element */
+
+figure:hover + figcaption {
+	opacity:0.8;
+}
+
+.memberImage1:hover ,.memberImage2:hover , .memberImage3:hover , .memberImage4:hover {
+	opacity : 0.4;
+	cursor:pointer;
+}
+
+
+
 
 
 
