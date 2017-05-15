@@ -1,264 +1,232 @@
-
 body {
-	background-color:#000;
+  background-color: #000;
 }
 
-.row{
-	
-	
-    margin: 5em 20%;
-
-
+.row {
+  margin: 5em 20%;
 }
 
-
-	
-figure{
-	position:relative;
-	opacity:0;
-	display:block;
-	transform: translateX(200px);
-	transition: all 1.2s ease-in-out;
-	overflow:hidden;
-
-
-}
-	
-figure.is-showing{
-	opacity:1;
-	transform: translateX(0px);
-	
-
-
+figure {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  transition: all 1.2s ease-in-out;
+  transform: translateX(200px);
+  opacity: 0;
 }
 
+figure.is-showing {
+  transform: translateX(0px);
+  opacity: 1;
+}
 
 h2 {
-	font-family: 'Ubuntu', sans-serif;
-	color:#888888;
-	 margin: 0 10%;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0 10%;
+  color: #888;
 }
 
 h3 {
-	font-family: 'Ubuntu', sans-serif;
-	color:#888888;
-	 margin: 0 10%;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0 10%;
+  color: #888;
 }
 
 p {
-	font-family: 'Ubuntu', sans-serif;
-	color:#FFF;
-	 margin: 0 10%;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0 10%;
+  color: #fff;
 }
+
 hr {
-	display: block;
-    height: 1px;
-    border-top: 1px solid #777;
-    margin: 4em 10%;
-  
+  display: block;
+  height: 1px;
+  margin: 4em 10%;
+  border-top: 1px solid #777;
 }
 
-.container{
-	background-color:#000;
-	position:relative;
-	left:0px;
-	right:0px;
-	
+.container {
+  position: relative;
+  right: 0;
+  left: 0;
+  background-color: #000;
 }
+
 .whiteSpace {
-	height:400px;
-	background-color:#000;
+  height: 400px;
+  background-color: #000;
 }
 
-.container-fluid{
-	
-	margin: 5em 10%;
-	position:relative;
-	margin-bottom:100px;
-	
-	
+.container-fluid {
+  position: relative;
+  margin: 5em 10%;
+  margin-bottom: 100px;
+  border: 1px solid #666;
+  padding: 5%;
+  border-radius: 10%;
 }
-
 
 
 /* Parallax */
 
 .backgroundImg {
-
-	background : url("img/parallax2.png");
-	position: relative;
-	height:538px;
-	background-size: auto 538px;
-	background-position: top center;
-	background-attachment:fixed;
-	overflow:hidden;
-	
-	
+  position: relative;
+  overflow: hidden;
+  height: 538px;
+  background: url('img/parallax2.png');
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: auto 538px;
 }
 
-.logo{
-	height:600px;
-	width:100%;
-	background-image: url("img/pinnedcrookslogo.png");
-	background-position:center;
-	background-repeat:no-repeat;
-	position:absolute;
-	top:50%;
-	margin-top: -300px;
-}
-.instrument1{
-	width:400px;
-	height:300px;
-	background-image: url("img/2.png");
-	background-repeat:no-repeat;
-	background-position: right bottom;
-	position:absolute;
-	left:70%;
-	top:75%;
-
-	
+.logo {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 600px;
+  margin-top: -300px;
+  background-image: url('img/pinnedcrookslogo.png');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.instrument2{
-	width:400px;
-	height:300px;
-	background-image: url("img/3.png");
-	background-repeat:no-repeat;
-	background-position: left bottom;
-	position:absolute;
-	right:70%;
-	top:75%;
+.instrument1 {
+  position: absolute;
+  top: 75%;
+  left: 70%;
+  width: 400px;
+  height: 300px;
+  background-image: url('img/2.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
 
-	
+.instrument2 {
+  position: absolute;
+  top: 75%;
+  right: 70%;
+  width: 400px;
+  height: 300px;
+  background-image: url('img/3.png');
+  background-repeat: no-repeat;
+  background-position: left bottom;
 }
 
 footer {
-	background:#1b786d;
-	color:black;
-	padding: 20px 0;
-	position:static;
-	bottom:0;
-	width:100%;
-	
-	
-	
+  position: static;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0;
+  color: black;
+  background: #1b786d;
 }
 
-footer .a{
-	color:black;
+footer .a {
+  color: black;
 }
+
 footer .footer-stuff {
-	max-width :400px;
-	margin : 0 auto;
-	font-family: 'Ubuntu', sans-serif;
-	color:black;
+  font-family: 'Ubuntu', sans-serif;
+  max-width: 400px;
+  margin: 0 auto;
+  color: black;
 }
 
-footer .awsomeFontIcons > a{
-	color:black;
-	margin: 0 auto;
-	text-decoration:none;
-	text-align:center;
+footer .awsomeFontIcons>a {
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  color: black;
 }
-
 
 .galleryButton {
-	border: 1px solid #888;
-	margin:20%;
-	font-family: 'Ubuntu', sans-serif;
-	font-size:2em;
-	border-radius:15%;
-	padding:20px 30px;
-	transform : translate(0px , 300px);
-	background:black;
-	display:block;
-	text-align:center;
-} 
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2em;
+  display: block;
+  margin: 20%;
+  padding: 20px 30px;
+  transform: translate(0px, 300px);
+  text-align: center;
+  border: 1px solid #888;
+  border-radius: 15%;
+  background: black;
+}
 
 .contactButton {
-	border: 1px solid #888;
-	margin:20%;
-	font-family: 'Ubuntu', sans-serif;
-	font-size:2em;
-	border-radius:15%;
-	padding:20px 30px;
-	transform : translate(0px , 300px);
-	background:black;
-	text-align:center;
-	
-} 
-.videoButton  {
-	border: 1px solid #888;
-	margin:20%;
-	font-family: 'Ubuntu', sans-serif;
-	font-size:2em;
-	border-radius:15%;
-	padding:20px 30px;
-	transform : translate(0px , 300px);
-	background:black;
-	text-align:center;
-	
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2em;
+  margin: 20%;
+  padding: 20px 30px;
+  transform: translate(0px, 300px);
+  text-align: center;
+  border: 1px solid #888;
+  border-radius: 15%;
+  background: black;
+}
+
+.videoButton {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2em;
+  margin: 20%;
+  padding: 20px 30px;
+  transform: translate(0px, 300px);
+  text-align: center;
+  border: 1px solid #888;
+  border-radius: 15%;
+  background: black;
 }
 
 .musicButton {
-	border: 1px solid #888;
-	margin:20%;
-	font-family: 'Ubuntu', sans-serif;
-	font-size:2em;
-	border-radius:15%;
-	padding:20px 30px;
-	transform : translate(0px , 300px);
-	background:black;
-	text-align:center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2em;
+  margin: 20%;
+  padding: 20px 30px;
+  transform: translate(0px, 300px);
+  text-align: center;
+  border: 1px solid #888;
+  border-radius: 15%;
+  background: black;
 }
 
-
-.contactButton:hover , .videoButton:hover, .galleryButton:hover  , .musicButton:hover{
-	color:white;
-	border: 1px solid white;
-	cursor:pointer;
-	
+.contactButton:hover, .videoButton:hover, .galleryButton:hover, .musicButton:hover {
+  cursor: pointer;
+  color: white;
+  border: 1px solid white;
 }
 
 .buttonRow {
-	margin-top:8em;
-	position:relative;
-	transform: translateX(0px);
-	transition: all 4s ease-in-out;
-	opacity:0;
+  position: relative;
+  margin-top: 8em;
+  transition: all 4s ease-in-out;
+  transform: translateX(0px);
+  opacity: 0;
 }
-.buttonRow.buttonsAreShowing{
-	
-	transform: translateY(-300px);
-	opacity:1;
+
+.buttonRow.buttonsAreShowing {
+  transform: translateY(-300px);
+  opacity: 1;
 }
 
 figcaption {
-	position:absolute;
-	bottom:20px;
-	left:0px;
-	background:black;
-	color:white;
-	padding: 2px 8px;
-	font-size:1em;
-	transition : all 1.5s ease-in-out;
-	opacity:0;
-
+  font-size: 1em;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  padding: 2px 8px;
+  transition: all 1.5s ease-in-out;
+  opacity: 0;
+  color: white;
+  background: black;
 }
+
 
 /* Change another Element style when hover on another element */
 
-figure:hover + figcaption {
-	opacity:0.8;
+figure:hover+figcaption {
+  opacity: .8;
 }
 
-.memberImage1:hover ,.memberImage2:hover , .memberImage3:hover , .memberImage4:hover {
-	opacity : 0.4;
-	cursor:pointer;
+.memberImage1:hover, .memberImage2:hover, .memberImage3:hover, .memberImage4:hover {
+  cursor: pointer;
+  opacity: .4;
 }
-
-
-
-
-
-
