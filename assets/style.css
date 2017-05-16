@@ -1,6 +1,23 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Titillium Web', sans-serif;
+  /*font-family: 'Ubuntu', sans-serif;*/
+}
+
 body {
   background-color: #000;
 }
+
+.container-fluid {
+  position: relative;
+  margin: auto;
+  padding: 10%;
+}
+
+
+/*Figure showing when scrolling*/
 
 .row {
   margin: 5em 20%;
@@ -21,21 +38,19 @@ figure.is-showing {
 }
 
 h2 {
-  font-family: 'Ubuntu', sans-serif;
   margin: 0 10%;
   color: #888;
 }
 
 h3 {
-  font-family: 'Ubuntu', sans-serif;
   margin: 0 10%;
   color: #888;
 }
 
 p {
-  font-family: 'Ubuntu', sans-serif;
   margin: 0 10%;
   color: #fff;
+  font-size: 1.2em;
 }
 
 hr {
@@ -55,15 +70,6 @@ hr {
 .whiteSpace {
   height: 400px;
   background-color: #000;
-}
-
-.container-fluid {
-  position: relative;
-  margin: 5em 10%;
-  margin-bottom: 100px;
-  border: 1px solid #666;
-  padding: 5%;
-  border-radius: 10%;
 }
 
 
@@ -126,7 +132,6 @@ footer .a {
 }
 
 footer .footer-stuff {
-  font-family: 'Ubuntu', sans-serif;
   max-width: 400px;
   margin: 0 auto;
   color: black;
@@ -139,81 +144,13 @@ footer .awsomeFontIcons>a {
   color: black;
 }
 
-.galleryButton {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 2em;
-  display: block;
-  margin: 20%;
-  padding: 20px 30px;
-  transform: translate(0px, 300px);
-  text-align: center;
-  border: 1px solid #888;
-  border-radius: 15%;
-  background: black;
-}
-
-.contactButton {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 2em;
-  margin: 20%;
-  padding: 20px 30px;
-  transform: translate(0px, 300px);
-  text-align: center;
-  border: 1px solid #888;
-  border-radius: 15%;
-  background: black;
-}
-
-.videoButton {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 2em;
-  margin: 20%;
-  padding: 20px 30px;
-  transform: translate(0px, 300px);
-  text-align: center;
-  border: 1px solid #888;
-  border-radius: 15%;
-  background: black;
-}
-
-.musicButton {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 2em;
-  margin: 20%;
-  padding: 20px 30px;
-  transform: translate(0px, 300px);
-  text-align: center;
-  border: 1px solid #888;
-  border-radius: 15%;
-  background: black;
-}
-
-.contactButton:hover, .videoButton:hover, .galleryButton:hover, .musicButton:hover {
-  cursor: pointer;
-  color: white;
-  border: 1px solid white;
-}
-
-.buttonRow {
-  position: relative;
-  margin-top: 8em;
-  transition: all 4s ease-in-out;
-  transform: translateX(0px);
-  opacity: 0;
-}
-
-.buttonRow.buttonsAreShowing {
-  transform: translateY(-300px);
-  opacity: 1;
-}
-
 figcaption {
   font-size: 1em;
   position: absolute;
-  bottom: 20px;
+  bottom: 100px;
   left: 0;
   padding: 2px 8px;
-  transition: all 1.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   opacity: 0;
   color: white;
   background: black;
@@ -226,7 +163,53 @@ figure:hover+figcaption {
   opacity: .8;
 }
 
+.memberImage1, .memberImage2, .memberImage3, .memberImage4 {
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  min-width: 100px;
+  margin-bottom: 4em;
+}
+
 .memberImage1:hover, .memberImage2:hover, .memberImage3:hover, .memberImage4:hover {
   cursor: pointer;
   opacity: .4;
+}
+
+.menuBar {
+  margin: 10% 10%;
+  overflow: hidden;
+}
+
+.musicImage, .videoImage, .galleryImage, .contactImage {
+  margin: 1em auto;
+  opacity: .5;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1);
+  max-width: 100%;
+  display: block;
+  border: 1px solid #111;
+}
+
+.musicImage:hover, .videoImage:hover, .galleryImage:hover, .contactImage:hover {
+  opacity: .1;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+h4 {
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  color: white;
+  background: #000;
+  display: block;
+}
+
+.menuBarBorder1, .menuBarBorder2, .menuBarBorder3, .menuBarBorder4 {
+  overflow: hidden;
+  margin: 0px;
+  display: inline-block;
+  width: auto;
+  height: auto;
 }
