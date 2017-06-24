@@ -1,4 +1,4 @@
-
+@import 'bourbon/bourbon'
 body
   background-color: black !important
   font-family: 'Raleway', sans-serif
@@ -7,23 +7,30 @@ body
 // HEADER
 .header
   height: 640px
-  background: url(../img/bg.png) center center
+  background: url(../img/bgImg.jpg) top center
   background-size: cover
   background-repeat: no-repeat
   background-attachment: fixed
   position: relative
   overflow: hidden
   .logo
-    background-image: url(../img/logo.png)
+    background-image: url(../img/logggo.png)
     background-repeat: no-repeat
     background-position: center
-    height: 300px
-    margin-top: 10%
+    height: 400px
+    margin-top: 8%
+    @media (max-width: 650px)
+      background-image: url(../img/logggoSm.png)
+    @media (max-width: 470px)
+      background-image: url(../img/logggoXs.png)
+
 
 
 
 // MEMBERS-SECTION
 .section-memebers
+  img
+    border-radius: 50px
   margin-top: 70px
   h2
     text-transform: uppercase
@@ -31,6 +38,8 @@ body
     text-align: center
   p
     color: white
+    text-align: center
+    letter-spacing: 1px
 
   .memberWrap
     margin-top: 70px
@@ -61,6 +70,19 @@ body
 
 // NAVBAR SECTION
 .section-navbar
+    .event-wrap
+      +size(600px)
+      @media (max-width: 550px)
+        +size(400px)
+      @media (max-width: 450px)
+        +size(300px)
+      background-image: url(../img/poster1.jpg)
+      background-size: contain
+      margin: 40px auto
+      border: 1px solid white
+      border-radius: 5px
+      transition: all 0.8s ease
+
     margin-top: 70px
     background: black
     h2
@@ -87,7 +109,7 @@ body
       &:hover
         color: white
         opacity: 1
-  
+
 
 // FOOTER
 
@@ -110,6 +132,7 @@ body
     margin-top: 10px
 
   .hesam
+    margin-top: 50px
     @media (max-width: 991px)
       margin-top: 80px
 

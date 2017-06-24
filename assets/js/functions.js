@@ -8,3 +8,17 @@ $(window).scroll(function() {
 
 
 });
+
+
+$(function() {
+  var numHeaders = 2;
+  var poster = 0;
+  setInterval(function() {
+    poster++;
+    if (poster > numHeaders) {
+      poster = 1;
+    }
+    $('.event-wrap').css('background-image', 'url(assets/img/poster' + poster + '.jpg)').css('background-size', 'contain').css('margin', '40px auto');
+
+  }, 7000);
+});
