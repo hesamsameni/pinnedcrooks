@@ -11,7 +11,7 @@ $(window).scroll(function() {
 
 
 $(function() {
-  var numHeaders = 2;
+  var numHeaders = 3;
   var poster = 0;
   setInterval(function() {
     poster++;
